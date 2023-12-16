@@ -1,0 +1,54 @@
+version: "3.1"
+
+stories:
+
+- story: order student card
+  steps:
+  - intent: order_student_card
+  - action: utter_ask_student_id
+  - intent: provide_student_id
+    entities:
+    - student_id
+  - action: utter_process_student_card
+
+- story: tell services offered by bot
+  steps:
+  - intent : tell_services
+  - action : action_generate_response
+  
+- story: get student id
+  steps:
+  - intent : get_student_id
+  - action: action_chat
+  - action : utter_get_first_last_name
+  - intent : get_name
+    entities:
+    - first_name
+    - last_name
+  - action : action_get_student_id
+  - action: action_chat
+  
+- story: submit student covid test report
+  steps:
+  - intent: report_covid
+  - action: action_chat
+  - action: utter_checking_details
+  - action: utter_enquire_student_id
+  - intent: provide_student_id
+    entities:
+    - student_id
+  - action : utter_get_first_last_name
+  - intent : get_name
+    entities:
+    - first_name
+    - last_name
+  - action: utter_ask_covid_status
+  - intent: get_covid_status
+    entities:
+    - covid_status
+  - action: utter_ask_covid_test_type
+  - intent: get_covid_test_type
+    entities:
+    - covid_test_type
+  - action: action_submit_covid_test_results
+  - action: action_chat

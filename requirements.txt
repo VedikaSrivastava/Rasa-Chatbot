@@ -1,0 +1,15 @@
+# python==3.8.18
+# rasa==3.6.15
+
+pandas==2.0.3
+filelock==3.13.1 
+huggingface==hub-0.19.4 
+safetensors==0.4.1 
+tokenizers==0.15.0 
+transformers==4.36.1
+jinja2==3.1.2 
+mpmath==1.3.0 
+sympy==1.12 
+torch==2.1.2
+et-xmlfile==1.1.0 
+openpyxl==3.1.2
