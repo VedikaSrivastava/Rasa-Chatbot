@@ -87,10 +87,17 @@ nlu:
     - My first name is [Tony](first_name) and last name is [Stark](last_name).
     - My name is [John](first_name) [Doe](last_name).
     - My name is [Tony](first_name) [Stark](last_name)
+    - My name is [Navya](first_name) [Jain](last_name)
+    - My name is [Wayne](first_name) [Synder](last_name)
+    - My name is [Wenda](first_name) [Qin](last_name)
+    - My name is [Osama](first_name) [Synder](last_name)
     - [Vedika](first_name) [Srivastava](last_name)
     - [Tony](first_name) [Stark](last_name) here
     - [John](first_name) [Doe](last_name) is my name
     - I am called [Vedika](first_name) [Srivastava](last_name)
+    - My name is {first_name} {last_name}
+    - I am called {first_name} {last_name}
+    - My first name is {first_name} and last name is {last_name}.
 
 
 - intent: report_covid
@@ -137,11 +144,17 @@ entity_synonyms:
   - John
   - Tony
   - Navya
+  - Synder
+  - Wenda
+  - Osama
   last_name:
   - Srivastava
   - Doe
   - Stark
   - Jain
+  - Wayne
+  - Dabbousi
+  - Qin
   covid_status:
   - Positive
   - Negative

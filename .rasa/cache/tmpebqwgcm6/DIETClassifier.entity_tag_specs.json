@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-covid_status",
+      "2": "I-covid_status",
+      "3": "L-covid_status",
+      "4": "U-covid_status",
+      "5": "B-covid_test_type",
+      "6": "I-covid_test_type",
+      "7": "L-covid_test_type",
+      "8": "U-covid_test_type",
+      "9": "B-first_name",
+      "10": "I-first_name",
+      "11": "L-first_name",
+      "12": "U-first_name",
+      "13": "B-last_name",
+      "14": "I-last_name",
+      "15": "L-last_name",
+      "16": "U-last_name",
+      "17": "B-student_id",
+      "18": "I-student_id",
+      "19": "L-student_id",
+      "20": "U-student_id",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-covid_status": 1,
+      "I-covid_status": 2,
+      "L-covid_status": 3,
+      "U-covid_status": 4,
+      "B-covid_test_type": 5,
+      "I-covid_test_type": 6,
+      "L-covid_test_type": 7,
+      "U-covid_test_type": 8,
+      "B-first_name": 9,
+      "I-first_name": 10,
+      "L-first_name": 11,
+      "U-first_name": 12,
+      "B-last_name": 13,
+      "I-last_name": 14,
+      "L-last_name": 15,
+      "U-last_name": 16,
+      "B-student_id": 17,
+      "I-student_id": 18,
+      "L-student_id": 19,
+      "U-student_id": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

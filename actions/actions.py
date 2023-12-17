@@ -156,7 +156,7 @@ class ActionGenerateResponse(Action):
         response = model.generate(
             input_ids=tokenizer.encode(user_input, return_tensors="pt"),
             do_sample=True,
-            temperature=0.7,
+            temperature=0.5,
             max_length=100,
             top_p=0.9,
             repetition_penalty=1.0,
@@ -191,7 +191,7 @@ class ActionChat(Action):
         bot_input_ids = torch.cat([chat_history_ids, new_user_input_ids], dim=-1) if chat_history_ids is not None else new_user_input_ids
 
         # generated a response while limiting the total chat history to 1000 tokens
-        chat_history_ids = model.generate(bot_input_ids, max_length=1000, pad_token_id=tokenizer.eos_token_id, temperature=0.7, do_sample=True)
+        chat_history_ids = model.generate(bot_input_ids, max_length=1000, pad_token_id=tokenizer.eos_token_id, temperature=0.4, do_sample=True)
 
         # update chat history slot
         tracker.slots["chat_history_ids"] = chat_history_ids
