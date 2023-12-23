@@ -9,3 +9,7 @@
 ```
 NOTE: we have already added the trained model in the repo so to run the bot only enviornment set up is needed then user can do `rasa run actions` followed by `rasa shell`
 ```
+
+- other commands
+    - `rasa run --enable-api --cors "*"`: This command runs the Rasa server with API enabled and CORS (Cross-Origin Resource Sharing) allowed from all origins, which is necessary for Streamlit to communicate with Rasa.
+    - `streamlit run app.py`: Run Streamlit app (Open the URL displayed in terminal to view the Streamlit application)
