@@ -12,11 +12,12 @@ def get_bot_response(message):
     if r.status_code == 200 and r.json():
         return [resp.get('text') for resp in r.json()]  # Return a list of messages
     else:
-        return ["I'm having trouble understanding that."]
+        return ["Sorry, I'm having trouble understanding that."]
 
 # Streamlit app layout
 st.title('University Chatbot')
 st.write('To end the conversation, type "stop".')
+st.write('Hey. How can I help you today?')
 
 # Initialize session state to store conversation
 if 'conversation' not in st.session_state:
@@ -52,9 +53,7 @@ def handle_input():
         st.session_state.user_input = ""
 
 # User input text box with the on_change callback
-user_input = st.text_input("Hey. How can I help you today?",
+user_input = st.text_input("You:",
                            key="user_input",
                            on_change=handle_input)
 
-
-##############################################3
